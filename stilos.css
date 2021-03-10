@@ -1,0 +1,98 @@
+:root{
+    /* colores */
+    --principal: #97c93e;
+    --amazon: #f90;
+    --apple: #000;
+    --facebook: #1877f2;
+    --tesla: #e12026;
+
+}
+
+/* header */
+.buy_ticket{
+    text-align: center;
+    border-radius: .5em;
+    background-color: var(--principal);
+}
+.buy_ticket:hover{
+    background-color: transparent;
+    color: var(--principal) !important;
+    box-shadow: 0 0 5px var(--principal);
+}
+/* Main */
+.main_image{
+    max-height: 80vh;
+    object-fit: cover;
+    filter: grayscale(.3);
+}
+#carousel{
+    position: relative;
+}
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    z-index: 10;
+}
+.overlay .container, .overlay .row{
+    height: 100%;
+}
+.main_link{
+    text-decoration: none;
+    color:var(--principal); 
+    border-color: var(--principal);
+    border-radius: .5em;
+}
+.main_link:hover{
+    color:white;
+    background-color: var(--principal);
+}
+.main_buttom, .Conocer{
+    color:white;
+    border: none;
+    background-color: var(--principal);
+    border-radius: .5em;
+    transition: .5s;
+}
+.main_buttom:hover, .Conocer:hover{
+    box-shadow: 0 0 5px var(--principal);
+    color: var(--principal) !important; 
+    background-color: transparent;
+}
+/* Speacker */
+.amazon, .apple, .facebook, .tesla{
+    text-decoration: none;
+    cursor: pointer;
+}
+.card-body a:hover{
+    color: white;
+}
+.amazon{
+    background-color: var(--amazon);
+}
+.apple{
+    background-color: var(--apple);
+}
+.facebook{
+    background-color: var(--facebook);
+}
+.tesla{
+    background-color: var(--tesla);
+}
+.date{
+    color: white;
+    background-color: #1c3643;
+}
+
+/* footer */
+.footer{
+    background: linear-gradient(90deg, #1c3643, #273b47, #1e5372);
+}
+.footer_link{
+    color: white;
+    text-decoration: none;
+}

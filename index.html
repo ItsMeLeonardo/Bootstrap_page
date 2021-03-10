@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="stilos.css">
+
+    <title>Platzi_proyect</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="56">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#main">La Conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#speakers">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#date">Lugar y fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#converter">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link buy_ticket" href="#" data-bs-toggle="modal" data-bs-target="#modalbuy">Reserve su lugar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- End Header -->
+
+    <!-- main -->
+    <main id="main" class="main">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Assets/img/ocaso-arbol-desierto.webp" class="d-block w-100 main_image" alt="Imagen_naturaleza">
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/img/lampara-flotante.webp" class="d-block w-100 main_image" alt="Imagen_naturaleza">
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/img/Puesta-de-sol-arbol.webp" class="d-block w-100 main_image" alt="Imagen_naturaleza">
+              </div>
+              <div class="overlay">
+                <div class="container">
+                  <div class="row text-md-end text-center  align-items-center">
+                    <div class="col-md-6 offset-md-6 ">
+                      <h1 class="text-break">Platzi conf en Hawaii</h1>
+                      <p class="d-none d-lg-block">Página creada usando Bootstrap, en uno de los cursos que tome en platzi
+                      En esta página se hace una simulación a la platzi conf que se llevara en Hawaii, todo se hace con bootstrap para poder agilisar el desarrollo de la página
+                      </p>
+                      <a href="#" class="main_link d-block d-lg-inline mb-3 btn btn-outline-success">Conviértete en orador</a>
+                      <a href="#" class="main_buttom d-block d-lg-inline p-2 ms-md-5 btn btn-success" data-bs-toggle="modal" data-bs-target="#modalbuy">Reserve su lugar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <!-- End main -->
+
+    <!-- Speakers -->
+    <section id="speakers" class="speakers">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col text-center">
+            <small>Conoce a los </small>
+            <h2>oradores</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-12 col-md-6 mb-3">
+            <div class="card">
+              <img src="Assets/img/Elon_musk.webp" class="card-img-top" alt="Imagen_naturaleza">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Elon Musk</h5>
+                <a class="badge rounded-pill tesla">Tesla</a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary Conocer">Conocer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12 col-md-6 mb-3">
+            <div class="card">
+              <img src="Assets/img/jeff_bezs.webp" class="card-img-top" alt="Imagen_naturaleza">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Jeff Bezos</h5>
+                <a class="badge rounded-pill amazon">Amazon</a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary Conocer">Conocer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12 col-md-6 mb-3">
+            <div class="card">
+              <img src="Assets/img/Tem_cook.webp" class="card-img-top" alt="Imagen_naturaleza">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Tim Cook</h5>
+                <a class="badge rounded-pill apple">Apple</a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary Conocer">Conocer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12 col-md-6 mb-3">
+            <div class="card">
+              <img src="Assets/img/Mark-Zuckerberg.webp" class="card-img-top" alt="Imagen_naturaleza">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Mark Zuckerberg</h5>
+                <a class="badge rounded-pill facebook">Facebook</a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary Conocer">Conocer más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Speakers -->
+
+    <!-- Date -->
+    <section class="date" id="date">
+      <div class="container-fluid">
+        <div class="row align-items-center date_description">
+          <div class="col-12 col-md-6 p-0">
+            <img src="Assets/img/hawaii.webp" alt="fecja y hora" class="rounded mx-auto d-block img-fluid " >
+          </div>
+          <div class="col-12 col-md-6 text-lg-end text-center">
+            <h2 class="mt-2">Honolulu - Octuber 2025</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo unde facere perferendis vel soluta possimus, quos porro necessitatibus quam? Ipsum excepturi libero, dolores magni fugit quia praesentium autem! Non, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto ex illo ipsa numquam esse qui recusandae dolore. Officia similique tempore delectus sunt pariatur veniam laboriosam nostrum quam accusamus! Commodi.</p>
+            <a href="#" class="main_link d-block d-lg-inline mb-3 btn btn-outline-success">Saber más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Date -->
+
+    <!-- converted in speaker -->
+    <section class="converter" id="converter">
+      <div class="container">
+        <div class="row text-uppercase mt-2 text-center">
+          <div class="col">
+            <small>Convíertete en</small>
+            <h2>orador</h2>
+          </div>
+        </div>
+        <div class="row text-center">
+          <p>Inscribete como orador para inspirar a otras personas</p>
+          <div class="col-10 col-md-5 offset-1 mb-2 mb-md-4">
+            <input type="text" aria-label="First name" class="form-control" placeholder="First name">
+          </div>
+          <div class="col-10 col-md-5 offset-1 offset-md-0 mb-2">
+            <input type="text" aria-label="Last name" class="form-control" placeholder="Second name">
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Describe el tema de tu charla</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Recuerda poner el titulo"></textarea>
+            </div>
+          </div>
+          <div class="col-12 col-lg-10 offset-lg-1 mb-3">
+            <a href="#" class="btn btn-primary d-block Conocer">Conocer más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End converted in speaker -->
+
+    <!-- Footer -->
+    <footer class="footer pb-4 pt-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md">
+                    <a href="#" class="footer_link">Contacto</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#" class="footer_link">Preguntas frecuentes</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#" class="footer_link">Prensa</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#" class="footer_link">Conferencias</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#" class="footer_link">Terminos y condiciones</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#" class="footer_link">Privacidad</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#" class="footer_link">Estudiantes</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!--  buy modal -->
+    <div class="modal fade" id="modalbuy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Adquirir ticket</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Tu correo</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="alert alert-warning" role="alert">
+              Cuando confirmes tu nombre de usuario te llegara la invitación por tu Email
+            </div>
+          </div>
+          <div class="modal-footer">
+            <form action="https://www.paypal.com/donate?business=Y9REG58NJKTMQ&item_name=ayudar+a+fundaciones&currency_code=USD" method="POST">
+              <button type="button" class="btn main_link" data-bs-dismiss="modal">Cancelar</button>
+              <!-- <button type="button" class="btn Conocer" >Confirmar</button> -->
+              <input type="submit" class="btn Conocer" value="Confirmar">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End buy modal -->
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
